@@ -5,6 +5,8 @@ module OmniAuth
     class Bitbucket < OmniAuth::Strategies::OAuth2
       # This is where you pass the options you would pass when
       # initializing your consumer from the OAuth gem.
+      option :name, 'bitbucket'
+      
       option :client_options, {
         :site => 'https://bitbucket.org',
         :authorize_url     => 'https://bitbucket.org/site/oauth2/authorize',
